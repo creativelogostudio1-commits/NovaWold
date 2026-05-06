@@ -3,30 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NovaWorld</title>
+<title>Portfolio Développeur</title>
 
 <style>
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: Arial;
     background: #0f172a;
     color: white;
-}
-
-/* NAVBAR */
-nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background: rgba(0,0,0,0.5);
-    position: fixed;
-    width: 100%;
-}
-
-nav a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
 }
 
 /* HERO */
@@ -35,38 +19,52 @@ nav a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    background: linear-gradient(135deg, #2563eb, #9333ea);
-    text-align: center;
+    padding: 40px;
 }
 
 .hero h1 {
     font-size: 3em;
 }
 
+.hero span {
+    color: #38bdf8;
+}
+
 .btn {
-    padding: 15px 25px;
-    background: white;
+    padding: 12px 20px;
+    background: #38bdf8;
     color: black;
-    border-radius: 25px;
+    border-radius: 20px;
     text-decoration: none;
+    display: inline-block;
     margin-top: 20px;
 }
 
-/* SECTIONS */
+/* SECTION */
 section {
-    padding: 80px 20px;
-    text-align: center;
+    padding: 60px 20px;
 }
 
-/* CARDS */
-.cards {
+/* SKILLS */
+.skills {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
-.card {
+.skill {
+    background: #1e293b;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* PROJECTS */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project {
     background: #1e293b;
     margin: 10px;
     padding: 20px;
@@ -74,11 +72,10 @@ section {
     width: 250px;
 }
 
-/* FOOTER */
-footer {
-    padding: 20px;
-    background: black;
-    text-align: center;
+/* HOVER */
+.project:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
 }
 </style>
 
@@ -86,43 +83,46 @@ footer {
 
 <body>
 
-<nav>
-    <div><b>NovaWorld</b></div>
-    <div>
-        <a href="#">Accueil</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
-    </div>
-</nav>
-
 <div class="hero">
-    <h1>Créer. Innover. Dominer.</h1>
-    <p>Un site moderne inspiré des meilleures plateformes du monde.</p>
-    <a href="#" class="btn">Commencer</a>
+    <h1>Salut, je suis <span>Ton Nom</span></h1>
+    <p>Développeur Web Full Stack</p>
+    <a href="#contact" class="btn">Me contacter</a>
 </div>
 
 <section>
-    <h2>Nos Services</h2>
-    <div class="cards">
-        <div class="card">💻 Développement Web</div>
-        <div class="card">📱 Applications Mobile</div>
-        <div class="card">🚀 Marketing Digital</div>
+    <h2>Compétences</h2>
+    <div class="skills">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">React</div>
+        <div class="skill">Node.js</div>
     </div>
 </section>
 
 <section>
-    <h2>Pourquoi nous ?</h2>
-    <p>Design moderne, performance rapide, expérience utilisateur parfaite.</p>
+    <h2>Projets</h2>
+    <div class="projects">
+        <div class="project">
+            <h3>Site E-commerce</h3>
+            <p>Boutique en ligne complète</p>
+        </div>
+        <div class="project">
+            <h3>App Mobile</h3>
+            <p>Application moderne</p>
+        </div>
+    </div>
 </section>
 
 <section>
-    <h2>Contact</h2>
-    <p>Email : contact@novaworld.com</p>
+    <h2>À propos</h2>
+    <p>Je suis passionné par le développement et la création de solutions modernes.</p>
 </section>
 
-<footer>
-    © 2026 NovaWorld - Tous droits réservés
-</footer>
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email : cianney029@gmail.com</p>
+</section>
 
 </body>
 </html>
