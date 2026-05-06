@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NovaWorld</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    width: 100%;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #2563eb, #9333ea);
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+}
+
+.btn {
+    padding: 15px 25px;
+    background: white;
+    color: black;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+/* SECTIONS */
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: #1e293b;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+/* FOOTER */
+footer {
+    padding: 20px;
+    background: black;
+    text-align: center;
+}
+</style>
+
+</head>
+
+<body>
+
+<nav>
+    <div><b>NovaWorld</b></div>
+    <div>
+        <a href="#">Accueil</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
+</nav>
+
+<div class="hero">
+    <h1>Créer. Innover. Dominer.</h1>
+    <p>Un site moderne inspiré des meilleures plateformes du monde.</p>
+    <a href="#" class="btn">Commencer</a>
+</div>
+
+<section>
+    <h2>Nos Services</h2>
+    <div class="cards">
+        <div class="card">💻 Développement Web</div>
+        <div class="card">📱 Applications Mobile</div>
+        <div class="card">🚀 Marketing Digital</div>
+    </div>
+</section>
+
+<section>
+    <h2>Pourquoi nous ?</h2>
+    <p>Design moderne, performance rapide, expérience utilisateur parfaite.</p>
+</section>
+
+<section>
+    <h2>Contact</h2>
+    <p>Email : contact@novaworld.com</p>
+</section>
+
+<footer>
+    © 2026 NovaWorld - Tous droits réservés
+</footer>
+
+</body>
+</html>
